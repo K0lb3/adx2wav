@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: adx2wav
+Version: 1.0.0
+Summary: converts ADX to WAV
+Home-page: https://github.com/K0lb3/adx2wav/
+Author: K0lb3
+License: MIT
+Download-URL: https://github.com/K0lb3/adx2wav/tarball/master
+Description: # ADX2WAV
+        
+        An adx2wav c-extension for Python based on [adx2wavmod3](https://hcs64.com/files/adx2wavmod3v2.zip) found on [hcs64.com/vgm_ripping](https://hcs64.com/vgm_ripping.html).
+        
+        ## Installation
+        
+        ### PIP
+        
+        ```cmd
+        pip install adx2wav
+        ```
+        
+        ### Manual
+        
+        ```cmd
+        python setup.py install
+        ```
+        
+        
+        ## Example
+        
+        ```python
+        from adx2wav import adx2wav
+        
+        with open("test.adx" , "rb") as f:
+            data = f.read()
+        
+        wav = adx2wav(data)
+        
+        with open("test.wav", "wb") as f:
+            f.write(wav)
+        ```
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Multimedia :: Sound/Audio :: Conversion
+Description-Content-Type: text/markdown

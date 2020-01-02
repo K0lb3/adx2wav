@@ -1,0 +1,9 @@
+MANIFEST.in
+README.md
+adx2wav.c
+setup.cfg
+setup.py
+adx2wav.egg-info/PKG-INFO
+adx2wav.egg-info/SOURCES.txt
+adx2wav.egg-info/dependency_links.txt
+adx2wav.egg-info/top_level.txt
